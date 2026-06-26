@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    width:700px;
+    margin:30px auto;
+}
+
+#formContainer{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+    height:100px;
+}
+
+.radio-group{
+    margin-top:10px;
+}
+
+.error{
+    color:red;
+    font-size:13px;
+}
+
+.preview-box{
+    margin-top:15px;
+    text-align:center;
+}
+
+#preview{
+    width:150px;
+    height:180px;
+    border:1px solid #ccc;
+    object-fit:cover;
+}
+
+.btn-group{
+    margin-top:20px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button[type="submit"]{
+    background:green;
+}
+
+button[type="reset"]{
+    background:red;
+}
+
+#cardContainer{
+    display:none;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+#cardFoto{
+    width:150px;
+    height:180px;
+    object-fit:cover;
+    border:1px solid #ccc;
+    margin-bottom:15px;
+}
+
+.card p{
+    text-align:left;
+    margin:10px 0;
+}
+
+#editBtn{
+    background:blue;
+    margin-top:15px;
+}
