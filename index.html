@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Pendaftaran Mahasiswa</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Form Pendaftaran Mahasiswa Baru</h2>
+
+<div id="formContainer">
+
+<form id="formPendaftaran">
+
+<label>NIM</label>
+<input type="text" id="nim">
+<small id="errNim" class="error"></small>
+
+<label>Nama Lengkap</label>
+<input type="text" id="nama">
+<small id="errNama" class="error"></small>
+
+<label>Email</label>
+<input type="email" id="email">
+<small id="errEmail" class="error"></small>
+
+<label>Nomor HP</label>
+<input type="text" id="hp">
+<small id="errHp" class="error"></small>
+
+<label>Jenis Kelamin</label>
+<div>
+<input type="radio" name="jk" value="Laki-Laki"> Laki-Laki
+<input type="radio" name="jk" value="Perempuan"> Perempuan
+</div>
+<small id="errJk" class="error"></small>
+
+<label>Program Studi</label>
+<select id="prodi">
+<option value="">-- Pilih Prodi --</option>
+<option>Manajemen Informatika</option>
+<option>Teknik Informatika</option>
+<option>Sistem Informasi</option>
+<option>Komputerisasi Akuntansi</option>
+</select>
+<small id="errProdi" class="error"></small>
+
+<label>Alamat</label>
+<textarea id="alamat"></textarea>
+<small id="errAlamat" class="error"></small>
+
+<label>Pas Foto</label>
+<input type="file" id="foto" accept=".jpg,.jpeg,.png">
+<small id="errFoto" class="error"></small>
+
+<div class="preview">
+<img id="preview" src="">
+</div>
+
+<br>
+
+<button type="submit">Submit</button>
+<button type="reset" id="resetBtn">Reset</button>
+
+</form>
+
+</div>
+
+<div id="cardContainer">
+
+<div class="card">
+
+<img id="cardFoto">
+
+<h3>Data Pendaftaran Mahasiswa</h3>
+
+<p>NIM : <span id="cardNim"></span></p>
+<p>Nama : <span id="cardNama"></span></p>
+<p>Email : <span id="cardEmail"></span></p>
+<p>No HP : <span id="cardHp"></span></p>
+<p>Jenis Kelamin : <span id="cardJk"></span></p>
+<p>Program Studi : <span id="cardProdi"></span></p>
+<p>Alamat : <span id="cardAlamat"></span></p>
+
+<button id="editBtn">Edit Data</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
