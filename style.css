@@ -1,0 +1,81 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f5f5f5;
+}
+
+.container{
+width:800px;
+margin:20px auto;
+}
+
+#formContainer,
+.card{
+background:rgb(46, 124, 176);
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+h2,h3{
+text-align:center;
+margin-bottom:20px;
+}
+
+label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+}
+
+textarea{
+height:100px;
+}
+
+button{
+padding:10px 20px;
+margin-top:15px;
+cursor:pointer;
+}
+
+.error{
+color:red;
+font-size:12px;
+}
+
+.preview{
+    text-align:center;
+    margin-top:10px;
+}
+
+#cardFoto{
+    display:block;
+    margin:0 auto 15px;
+}
+
+#preview,
+#cardFoto{
+    width:128px;
+    height:171px;
+    border:1px solid #8e8c8a;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+}
+
+#cardContainer{
+display:none;
+}
